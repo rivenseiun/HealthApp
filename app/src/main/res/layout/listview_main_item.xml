@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bbs_head_icon" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_item_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:textColor="@color/steelblue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/main_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="time"
+                android:textColor="#70000000"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/main_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:textColor="@color/black"
+                android:text="content" />
+
+            <com.whu.healthapp.view.GridView
+                android:id="@+id/gv_listView_main_gridView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:horizontalSpacing="5dp"
+                android:listSelector="#00000000"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/main_item_articleid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#70000000"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#10000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/like_btn"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/gv_comment_head"
+                    android:background="@drawable/bbs_like_btn"
+
+                    />
+
+                <TextView
+                    android:id="@+id/gv_comment_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/comment_btn"
+                    android:columnWidth="55dp"
+                    android:listSelector="#00000000"
+                    android:numColumns="auto_fit"
+                    android:text="3"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/comment_btn"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/gv_comment_count"
+
+                    android:background="@drawable/bbs_comment_btn" />
+
+                <TextView
+                    android:id="@+id/gv_comment_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_marginRight="5dp"
+                    android:columnWidth="55dp"
+                    android:listSelector="#00000000"
+                    android:numColumns="auto_fit"
+                    android:text="3"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <!--
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="55dp"
+                    android:listSelector="#00000000"
+                    android:numColumns="auto_fit"
+                    android:text="人觉得很赞" />-->
+
+            </LinearLayout>
+
+
+            <com.whu.healthapp.view.CommentListView
+                android:id="@+id/lv_item_listView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

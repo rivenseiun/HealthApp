@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activity.personer.RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/theme_green"
+        android:paddingLeft="@dimen/app_title_padding_lr"
+        android:paddingRight="@dimen/app_title_padding_lr">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/title_regeist"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/app_title_size" />
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/title_back"
+            android:textColor="@color/text_title_left" />
+
+
+        <TextView
+            android:id="@+id/tv_command"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/title_validno"
+            android:textColor="@color/text_title_left" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title"
+        android:paddingLeft="@dimen/app_padding_lr"
+        android:paddingRight="@dimen/app_padding_lr">
+
+        <LinearLayout
+            android:id="@+id/ll_content_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.hubu.fan.view.ClearEditText
+                android:id="@+id/et_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_regeist_phone"
+                android:imeOptions="actionGo"
+                android:inputType="number" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_content_psw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.hubu.fan.view.ClearEditText
+                    android:id="@+id/et_valid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_valid"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:nextFocusForward="@+id/et_psw" />
+
+                <Button
+                    android:id="@+id/btn_sendValidAgain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/theme_green"
+                    android:onClick="onClick"
+                    android:text="@string/sendValidAgain"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <com.hubu.fan.view.ClearEditText
+                android:id="@+id/et_psw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_psw"
+                android:imeOptions="actionGo"
+                android:inputType="textPassword" />
+
+
+            <com.hubu.fan.view.ClearEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入昵称"
+                android:imeOptions="actionGo"
+          />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.8"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="性别"
+                    android:textSize="16dp" />
+
+
+
+                <RadioGroup
+                    android:id="@+id/et_sex"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.2"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="男" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="女" />
+                </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.8"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="用户类型"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:id="@+id/et_type_spinner"
+                    android:prompt="@string/type_spinner"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <com.hubu.fan.view.ClearEditText
+                android:id="@+id/et_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入您的身高"
+                android:imeOptions="actionGo"
+                />
+
+            <com.hubu.fan.view.ClearEditText
+                android:id="@+id/et_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入您的体重"
+                android:imeOptions="actionGo"
+                 />
+
+            <com.hubu.fan.view.ClearEditText
+                android:id="@+id/et_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入您的年龄"
+                android:imeOptions="actionGo"
+             />
+
+            <com.hubu.fan.view.ClearEditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入您的住址"
+                android:imeOptions="actionGo"
+                />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

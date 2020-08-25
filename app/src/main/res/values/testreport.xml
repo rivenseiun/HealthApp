@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  测试报告动画测试-->
+    <dimen name="test_reports_textsize">16sp</dimen>
+    <dimen name="test_reports_clicksize">18sp</dimen>
+    <dimen name="dpunit">1dp</dimen>
+
+</resources>

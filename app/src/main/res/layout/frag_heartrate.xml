@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.bbcc.mobilehealth.view.ProcessView"
+    android:id="@+id/frag_heartrate_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/heartrate_title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/theme_green"
+        android:gravity="center"
+        android:text="MIO心率测量"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <!--<Button-->
+        <!--android:id="@+id/upload"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="90dp"-->
+        <!--android:text="upload" />-->
+
+    <TextView
+        android:id="@+id/heartrate_show_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="39sp" />
+
+    <com.whu.healthapp.mio.view.ProcessView
+        android:id="@+id/heartrate_circle_processview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.whu.healthapp.mio.view.DrawChart
+        android:id="@+id/heartrate_circle_drawchart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="260dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

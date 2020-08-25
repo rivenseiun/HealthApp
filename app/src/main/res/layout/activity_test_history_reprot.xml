@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/theme_color"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="测试报告"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_textsize_center" />
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:onClick="viewClick"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_textsize_left" />
+
+            <TextView
+                android:id="@+id/tv_finished"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:onClick="viewClick"
+                android:text="历史信息"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_textsize_left" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+
+            </ListView>
+        </FrameLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"></View>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_testreport_operate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/ic_tp_details"
+                android:gravity="center"
+                android:text="报告详情"
+                android:textColor="#56abe4"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/tv_speak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/ic_tp_voice"
+                android:gravity="center"
+                android:text="语音播报"
+                android:textColor="#11cd6e"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/ic_tp_delete"
+                android:gravity="center"
+                android:text="数据删除"
+                android:textColor="#eb4f38"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_publish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/ic_tp_comment"
+                android:gravity="center"
+                android:text="亲情评论"
+                android:textColor="#00bb9c"
+                android:textSize="18sp" />
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/right_drawer"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="#fff"
+        android:choiceMode="singleChoice"
+        android:divider="#000"
+        android:dividerHeight="0.5dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp" />
+
+</android.support.v4.widget.DrawerLayout>

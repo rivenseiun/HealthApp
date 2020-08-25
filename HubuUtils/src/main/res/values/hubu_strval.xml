@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hubu_httputils_timeout">网络请求本地错误，请查看相关日志信息</string>
+
+</resources>

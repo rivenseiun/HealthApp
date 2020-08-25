@@ -1,0 +1,103 @@
+<resources>
+
+    <style name="notitle">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here.
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        -->
+        <item name="colorPrimary">@color/theme_green</item>
+        <item name="colorPrimaryDark">@color/theme_green</item>
+        <item name="colorAccent">@color/theme_green</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="calender_style">
+        <item name="color">@color/theme_green</item>
+    </style>
+
+    <style name="sleepText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="sleepTextDown">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">#E6DFE6</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="sleepData">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">25dp</item>
+    </style>
+
+    <style name="sleepDataDown">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+
+    <style name="action_item_textview">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/dimgray</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="action_item_textview2">
+        <item name="android:textSize">29sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+    <!-- 水平分割线style -->
+    <style name="common_horizontal_division_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/divider_grey</item>
+    </style>
+
+</resources>

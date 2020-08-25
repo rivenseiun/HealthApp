@@ -1,0 +1,538 @@
+<resources>
+    <string name="app_name">Health</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="user_type_child">0</string>
+    <string name="user_type_lady">1</string>
+    <string name="user_type_older">2</string>
+    <string name="user_type_normal">3</string>
+    <string name="user_type_gravida">4</string>
+
+    <string name="ok">确认</string>
+    <string name="personer">普通</string>
+    <string name="child">小孩</string>
+    <string name="lady">妇女</string>
+    <string name="older">老人</string>
+
+    <string name="example_name">姓名：武汉大学</string>
+    <string name="example_phone">手机号：(027)6875423168754826</string>
+
+    <string name="fun_devicesel">设备重置</string>
+    <string name="fun_personersel">角色选择</string>
+    <string name="fun_logout">注销</string>
+    <string name="fun_tag">&gt;</string>
+
+    <string name="title_login">健康</string>
+    <string name="title_back">&lt;返回</string>
+    <string name="title_regeist">注册</string>
+    <string name="title_validno">发送验证码</string>
+    <string name="title_regeist_click">点击注册</string>
+    <string name="title_tab1">测量</string>
+    <string name="title_tab2">数据</string>
+    <string name="title_tab3">个人</string>
+    <string name="title_tab4">圈子</string>
+    <string name="title_personersel">选择你的角色</string>
+
+
+    <string name="hint_no">请输入账号</string>
+    <string name="hint_regeist_phone">请输入需要注册的手机号</string>
+    <string name="hint_psw">请输入密码</string>
+    <string name="hint_valid">请输入验证码</string>
+
+    <string name="login">登录</string>
+    <string name="tab1">测量</string>
+    <string name="tab2">数据</string>
+    <string name="tab3">个人</string>
+    <string name="tab4">论坛</string>
+
+    <string name="view_data_history">查看历史数据</string>
+
+    <string name="test_xidian">心电测量</string>
+    <string name="test_xueyang">血氧测量</string>
+    <string name="test_xueya">血压测量</string>
+    <string name="test_tiwen">体温测量</string>
+    <string name="test_mio_xinlv">mio心率测量</string>
+    <string name="test_mio_sleep">mio睡眠监测</string>
+    <string name="test_mio_step">mio运动监测</string>
+    <string name="test_height">身高体重测量</string>
+    <string name="test_weight">孕妇体重测量</string>
+    <string name="test_xtxz">血糖血脂测量</string>
+
+    <string name="data_xidian">心电数据</string>
+    <string name="data_xueyang">血氧数据</string>
+    <string name="data_xueya">血压数据</string>
+    <string name="data_tiwen">体温数据</string>
+    <string name="data_height">身高体重数据</string>
+    <string name="data_weight">孕妇体重数据</string>
+    <string name="data_xtxz">血糖血脂数据</string>
+
+
+    <string name="tip">提示</string>
+    <string name="tip_sendValid">正在发送验证码，请稍后...</string>
+    <string name="tip_regeist">正在注册，请稍后...</string>
+    <string name="tip_phone_error">请输入11位的手机号</string>
+    <string name="tip_password_error">密码以字母开头，长度在6~18之间，只能包含字符、数字和下划线</string>
+    <string name="tip_valid_none">请输入验证码</string>
+    <string name="tip_valid_error">验证码错误</string>
+    <string name="tip_child_height">请输入小孩身高(CM)</string>
+    <string name="tip_child_weight">请输入小孩体重(KG)</string>
+    <string name="tip_child_error">请输入正确的身高和体重</string>
+
+    <string name="tip_child_testdate">请输入小孩测量日期</string>
+    <string name="tip_nodevice">未连接蓝牙设备</string>
+    <string name="tip_lady_weight">请输入您的体重(KG)</string>
+    <string name="tip_lady_error">请输入正确的体重</string>
+    <string name="tip_older_xt">请输入血糖值</string>
+    <string name="tip_older_xz">请输入血脂值</string>
+
+    <string name="sendValidAgain">再次发送验证码</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+    <string name="apk_name">jqb</string>
+    <string name="action_settings">设置</string>
+    <string name="bluetoothon">开启蓝牙</string>
+    <string name="bluetoothoff">关闭蓝牙</string>
+    <string name="bluetoothstatus">蓝牙状态</string>
+    <string name="getbluetoothmac">蓝牙匹配</string>
+    <string name="devicestatus">仪器状态</string>
+    <string name="confirmsave">确认保存</string>
+    <string name="confirmsave1">确认保存并输出健康建议</string>
+    <string name="highbloodpressure">收缩压</string>
+    <string name="lowbloodpressure">舒张压</string>
+    <string name="date">日期</string>
+    <string name="healthscore">0</string>
+    <string name="oxygenscore">0%</string>
+    <string name="bloodpressurescore">0mmHg</string>
+    <string name="historicaldata">历史数据</string>
+    <string name="inputhealthdata">请输入健康数据</string>
+    <string name="inputhealthdataq">无健康数据分享</string>
+    <string name="status1">正常</string>
+    <string name="bloodpressure">血压</string>
+    <string name="bloodpressurenow">袖带压力</string>
+    <string name="bloodpressurenow2">袖带压：</string>
+    <string name="oxygen">血氧</string>
+    <string name="breath">呼吸</string>
+    <string name="heartrate">心率</string>
+    <string name="temperature">体温</string>
+    <string name="pulse">脉率</string>
+    <string name="avgpressure">平均压</string>
+    <string name="height">身高</string>
+    <string name="bloodsugar">血糖</string>
+    <string name="weight">体重</string>
+    <string name="ecg">心电图</string>
+    <string name="bmi">BMI</string>
+    <string name="photo">头像</string>
+    <string name="emergency">紧急呼叫</string>
+    <string name="daytime">现在是</string>
+    <string name="title_activity_show_curve">健康曲线</string>
+    <string name="listviewHead1">低压</string>
+    <string name="product">健亲宝 0.0.1 (Android) </string>
+    <string name="about">清易云康 版权所有\nCopyright @2015&#8211;2020 All Rights Reserved </string>
+    <string name="terms">申明：\n此版本适用于Android系列设备，如在其他品牌或型号上的设备上使用本软件，对于出现的任何问题，我公司不承担责任。本软件的下载、安装完全免费，使用过程中产生的数量流量费用，由运营商收取。\n\n详情请致电400&#8211;665&#8211;9699。 \n\n免责声明：\n此版本所获取生命体征信息和健康建议仅供参考，请勿用于临床诊断。</string>
+    <string name="title_activity_about">关于</string>
+    <string name="title_activity_help_setting">求助参数设置</string>
+    <string name="buttonok">确定</string>
+    <string name="buttoncancel">取消</string>
+    <string name="confirmdelete">确定删除？</string>
+    <string name="alert_phone_number">请设置应急电话号码</string>
+    <string name="gotopage">去往</string>
+    <string name="input">输入</string>
+    <string name="collect">采集</string>
+    <string name="consult">建议</string>
+    <string name="share_healthdata">分享健康</string>
+    <string name="icon">图标</string>
+    <string name="blankstring"></string>
+    <string name="title_activity_doctor_suggestion">健康建议</string>
+    <string name="title_activity_history">历史</string>
+    <string name="healthstatus">健康状态</string>
+    <string name="sound">语音提示</string>
+    <string name="clickhere">点击评分</string>
+    <string name="hintusername">用户名</string>
+    <string name="username1">用户名:</string>
+    <string name="hintpasswd1">密码</string>
+    <string name="hintpasswd2">验证密码</string>
+    <string name="action_add">注册</string>
+    <string name="register">新用户注册</string>
+    <string name="userset">用户设置</string>
+    <string name="userinfo">用户信息</string>
+    <string name="cancel">注销</string>
+    <string name="tab1_test">仪器</string>
+    <string name="tab2_history">历史</string>
+    <string name="tab3_mine">我的</string>
+    <string name="time">时间</string>
+    <string name="tab1_devicealert">您现在使用的是体验版，无法自动采集健康数据。\n如果需要正式版，请联系我们。\n热线电话：400&#8211;665&#8211;9699！</string>
+    <string name="myhealthis">健康动态：</string>
+    <string name="the">第</string>
+    <string name="page">页</string>
+    <string name="loginuser">当前用户：&#8211;&#8211;</string>
+    <string name="drawingsettings">绘图参数</string>
+    <string name="clearalldata">清空数据</string>
+    <string name="alreadylogin1">当前用户:</string>
+    <string name="alreadylogin3">当前用户</string>
+    <string name="setsound">语音播报</string>
+    <string name="setwifi">Wifi下自动上传</string>
+    <string name="set4g3d">3G/4G下自动上传</string>
+    <string name="alreadylogin2"></string>
+    <string name="inviteuse">邀请您使用健亲宝:http://wocaring.cn/downloads/jqb.apk。</string>
+    <string name="recommendmenu">推荐</string>
+    <string name="minutescore">分</string>
+    <string name="doctorsuggestiontitle">健康建议</string>
+    <string name="pleasewait">请等待，正在生成健康建议......</string>
+    <string name="total">共</string>
+    <string name="dataitems">条数据，合计</string>
+    <string name="inputuserinfo">用户登录</string>
+    <string name="successfullogin">登录成功</string>
+    <string name="successfuluserinfo">修改个人信息成功</string>
+    <string name="usererror">用户名或登录名错误！</string>
+    <string name="userInfoerror">修改失败！</string>
+    <string name="inputregisterinfo">用户注册</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="usernotempty">用户名不能为空！</string>
+    <string name="reget2">获取验证码</string>
+    <string name="reget1">重新获取</string>
+    <string name="reget">请输入验证码</string>
+    <string name="userisiphone">请输入手机号！</string>
+    <string name="userisnoiphone">手机号不正确！</string>
+    <string name="passwdnotsame">两次输入密码不同！</string>
+    <string name="yanzhengerror">请输入验证码！</string>
+    <string name="successfulregistration">注册成功！</string>
+    <string name="userexists">用户已存在！</string>
+    <string name="confirmclearall">确认清空全部数据吗？</string>
+    <string name="updateby3g">当前为非Wifi模式，是否上传数据？</string>
+    <string name="todayis">今天是</string>
+    <string name="isexcellent">您的健康状态非常好。</string>
+    <string name="isgood">您的健康状态良好。</string>
+    <string name="isnormal">您的健康状态马马虎虎......</string>
+    <string name="isbad">您应该马上去看医生了！</string>
+    <string name="hintheight">cm</string>
+    <string name="hintnoinput">提示:未变参数无需重复输入</string>
+    <string name="hintweight">kg</string>
+    <string name="hinttemperature">36&#8211;37.5C</string>
+    <string name="hintheartrate">60&#8211;100/min</string>
+    <string name="hintbreath">12&#8211;20/min</string>
+    <string name="hintoxygen">>95%</string>
+    <string name="hinthbp">90&#8211;140mmHg</string>
+    <string name="hintlbp">60&#8211;90mmHg</string>
+    <string name="hintbs">3.9&#8211;6.1mmol/l</string>
+    <string name="hintweightmax">体重坐标上限</string>
+    <string name="hintweightmin">体重坐标下限</string>
+    <string name="hintoxygenmax">血氧坐标上限</string>
+    <string name="hintoxygenmin">血氧坐标下限</string>
+    <string name="hintbreathmax">呼吸坐标上限</string>
+    <string name="hintbreathmin">呼吸坐标下限</string>
+    <string name="hinttemperaturemax">体温坐标上限</string>
+    <string name="hinttemperaturemin">体温坐标下限</string>
+    <string name="hintheartratemax">心率坐标上限</string>
+    <string name="hintheartratemin">心率坐标下限</string>
+    <string name="hintpressuremax">血压坐标上限</string>
+    <string name="hintpressuremin">血压坐标下限</string>
+    <string name="hintsugarmax">血糖坐标上限</string>
+    <string name="hintsugarmin">血糖坐标下限</string>
+    <string name="hintchangeuser">输入新用户名</string>
+    <string name="hintpasswd">输入新用户密码</string>
+    <string name="hintpasswd3">验证新用户密码</string>
+    <string name="hintrealname">输入姓名（非必填字段）</string>
+    <string name="hintcardnumber">输入身份证号（非必填字段）</string>
+    <string name="language_choice">选择语言</string>
+    <string name="language">语言</string>
+    <string name="firstdataalert">资料不能为空或和原始资料相同</string>
+    <string name="title_activity_welcome">欢迎使用健亲宝</string>
+    <string name="action_exit">取消登录</string>
+    <string name="login_register">登录注册</string>
+    <string name="dial_emergency_number">应急电话</string>
+    <string name="action_change_user">切换用户</string>
+    <string name="recommend">邀请好友</string>
+    <string name="gotourl">健康常识</string>
+    <string name="title_activity_forum">你问我答</string>
+    <string name="title_activity_get_realtime_data_from_device">实时数据采集</string>
+    <string name="title_activity_bluetooth_setting">设置蓝牙</string>
+    <string name="selectmac">请选择配对蓝牙：</string>
+    <string name="save">保存</string>
+    <string name="deleteselitem">删除选择条目</string>
+    <string name="start">开始</string>
+    <string name="pasue">暂停</string>
+    <string name="stop">停止</string>
+    <string name="contin">继续</string>
+    <string name="back">返回</string>
+    <string name="updata">上传</string>
+    <string name="dayin">打印</string>
+    <string name="speak">语音</string>
+    <string name="emergencymobilenunmber">应急手机号码</string>
+    <string name="emergencyphonenumber">应急电话号码</string>
+    <string name="weightlow">-您的体重偏低;\n</string>
+    <string name="weightlowsuggestion">-建议多吃主食和脂肪类事物，若过廋需查明原因进行针对性治疗，不建议长期过度节食;\n</string>
+    <string name="weightnormal">-您的体重正常;\n</string>
+    <string name="weighthigh1">-您的体重有点超标;\n</string>
+    <string name="weighthigh1suggestion">-请加强锻炼，适当节食并控制体重;\n</string>
+    <string name="weighthigh2">-您超重了;\n</string>
+    <string name="weighthigh2suggestion">-请多吃蔬菜和不含糖水果，建议每天有氧运动(例如慢跑)一个小时，以减轻体重;\n</string>
+    <string name="weighthigh3">-您太胖了;\n</string>
+    <string name="weighthigh3suggestion">-可能有血糖、血脂等相关疾病，必须采取措施减肥并进行治疗;\n</string>
+    <string name="oxygenlow">-您的血氧饱和度偏低;\n</string>
+    <string name="oxygenlowsuggestion">-需要查明血氧饱和度偏低的原因，确认是否有呼吸或循环系统疾病;\n</string>
+    <string name="oxygennormal">-您的血氧饱和度正常;\n</string>
+    <string name="breathlow">-呼吸过缓;\n</string>
+    <string name="breathlowsuggestion">-不同时间多次测量呼吸率，确认是否持续性呼吸过缓;\n</string>
+    <string name="breathnormal">-呼吸率正常;\n</string>
+    <string name="breathhigh">-呼吸过速;\n</string>
+    <string name="breathhighsuggestion">-不同时间多次测量呼吸率，确认是否持续性呼吸过速;\n</string>
+    <string name="temperaturelow">-体温过低;\n</string>
+    <string name="temperaturelowsuggestion">-请多穿衣服保暖，需要判断是否因疾病导致体温过低;\n</string>
+    <string name="temperaturenormal">-体温正常;\n</string>
+    <string name="temperaturehigh1">-体温偏高;\n</string>
+    <string name="temperaturehigh1suggestion">-多饮水，保持空气流通，加强散热，密切关注体温变化;\n</string>
+    <string name="temperaturehigh2">-体温过高;\n</string>
+    <string name="temperaturehigh2suggestion">-立即物理降温（冰敷）或药物降温（退热药）;\n</string>
+    <string name="heartlow">-心动过缓;\n</string>
+    <string name="heartlowsuggestion">-检查是否服用减慢心率药物，如果严重心动过缓伴有头晕、黑朦甚至晕厥等，则可能有心血管系统异常;\n</string>
+    <string name="heartnormal">-心率正常;\n</string>
+    <string name="hearthigh">-心动过速;\n</string>
+    <string name="hearthighsuggestion">-密切关注心率，判断是否持续性心动过速;\n</string>
+    <string name="pressurelow">-可能有低血压;\n</string>
+    <string name="pressurelowsuggestion">-观察是否有其他不适;\n</string>
+    <string name="pressurenormal">-血压正常;\n</string>
+    <string name="pressurehigh1">-可能有轻度高血压;\n</string>
+    <string name="pressurehighsuggestion1">-请注意低盐低脂饮食，密切关注血压变化情况;\n</string>
+    <string name="pressurehigh2">-可能有中度高血压;\n</string>
+    <string name="pressurehighsuggestion2">-请去医院复查，并进行相关治疗，必要时需要服用降压药物;\n</string>
+    <string name="pressurehigh3">-可能有重度高血压;\n</string>
+    <string name="pressurehighsuggestion3">-需要确认是否持续性重度高血压;\n</string>
+    <string name="sugarlow">-可能有低血糖;\n</string>
+    <string name="sugarlowsuggestion">-正常饮食，适当补充糖水或葡萄糖\n</string>
+    <string name="sugarnormal">-血糖正常;\n</string>
+    <string name="sugarhigh">-可能有高血糖;\n</string>
+    <string name="sugarhighsuggestion">-适当控制饮食，需要核实是否持续性高血糖；\n</string>
+    <string name="healthok">-您的身体已经很好了，请注意保持。\n</string>
+    <string name="gotohospital0">-注意：有健康状态异常，建议抽空去医院做详细检查。</string>
+    <string name="gotohospital1">-注意：有严重健康问题可能，立即去医院进一步检查，并遵医嘱进行相应治疗。</string>
+    <string name="title_activity_collect_result">检查结果</string>
+    <string name="connecting">仪器连接中......</string>
+    <string name="bluetootherror">仪器连接失败，请重新连接</string>
+    <string name="nobluetooth">本机无蓝牙</string>
+    <string name="bluetoothfail">蓝牙开启失败</string>
+    <string name="firstcheck">第一次检测前请返回主界面输入身高等基本数据</string>
+    <string name="datasaved">数据保存完毕！</string>
+    <string name="ecgok">正常</string>
+    <string name="ecgafib">房颤</string>
+    <string name="ecgasystole">停搏</string>
+    <string name="ecgtachy">心动过速</string>
+    <string name="ecgvtachy">严重心动过速</string>
+    <string name="ecgbrady">心动过缓</string>
+    <string name="ecgmissbeat">漏搏</string>
+    <string name="ecgfreqpvc">频发室早</string>
+    <string name="ecgrunpvc">连发室早</string>
+    <string name="ecgtrigemin">三联率</string>
+    <string name="ecgbigeminy">二联率</string>
+    <string name="ecgront">R on T</string>
+    <string name="ecginterpvc">插入室早</string>
+    <string name="ecgcouplet">成对室早</string>
+    <string name="ecgpvc">室早</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="autosend">自动发送消息</string>
+    <string name="minlimit">下限</string>
+    <string name="maxlimit">上限</string>
+    <string name="line">~</string>
+    <string name="advanced">高级</string>
+    <string name="title_activity_advanced_setting">仪器参数</string>
+    <string name="usertype">用户类型</string>
+    <string name="adult">成人</string>
+    <string name="calibration">校准</string>
+    <string name="bppatient">血压测量对象</string>
+    <string name="bppatient1">成人180</string>
+    <string name="bppatient2">成人160</string>
+    <string name="bppatient3">成人150</string>
+    <string name="bppatient4">成人140</string>
+    <string name="bppatient5">儿童120</string>
+    <string name="bppatient6">儿童100</string>
+    <string name="bppatient7">儿童70</string>
+    <string name="bpmode">血压测量模式</string>
+    <string name="bpmode1">正向</string>
+    <string name="bpmode2">逆向</string>
+    <string name="bpmode3">快速</string>
+    <string name="bpmode4">取消快速</string>
+    <string name="bpmode5">开始自动测量</string>
+    <string name="bpmode6">取消自动测量</string>
+    <string name="bpautotime">血压自动测量时间</string>
+    <string name="bpautotime1">1分钟</string>
+    <string name="bpautotime2">2分钟</string>
+    <string name="bpautotime3">3分钟</string>
+    <string name="bpautotime4">4分钟</string>
+    <string name="bpautotime5">5分钟</string>
+    <string name="bpautotime6">10分钟</string>
+    <string name="bpautotime7">30分钟</string>
+    <string name="bpautotime8">60分钟</string>
+    <string name="bpcal">血压校准</string>
+    <string name="ecgmode">心电测量模式</string>
+    <string name="ecgmode1">诊断</string>
+    <string name="ecgmode2">监护</string>
+    <string name="ecgmode3">手术</string>
+    <string name="hravg">心率均数</string>
+    <string name="ecgwavegain">波形增益</string>
+    <string name="ecgfilter">心电滤波</string>
+    <string name="ecgchannel">心电通道</string>
+    <string name="ecglead">心电主导联选择</string>
+    <string name="ecgjump">起搏检测</string>
+    <string name="ecgchuchan">除颤同步</string>
+    <string name="userxinxi">个人信息</string>
+    <string name="ecgabnormal">心电变异</string>
+    <string name="bluetoothnotenabled">蓝牙适配器未开启</string>
+    <string name="nouser">用户未登录</string>
+    <string name="spo2">血氧饱和度：</string>
+    <string name="nostring"></string>
+    <string name="title_activity_report">用户报告</string>
+    <string name="stop_speak">停止语音播报</string>
+    <string name="start_speak">语音播报</string>
+
+    <string name="nouserfuldata">此数据未测量，已丢弃</string>
+
+    <string name="test_data_delete">是否删除数据？删除后该数据无法恢复！</string>
+    <string name="feedback">\t亲爱的用户，谢谢您的反馈。您的宝贵建议我们将会采纳，在使用过程中给您带来的不便我们深表歉意。在您提交的反馈信息中，请您留下您的联系方式（以注册手机号为主），我们会在审核完成后联系您。</string>
+    <string name="aboutus">武汉清易云康医疗设备有限公司\n版本：v2.0</string>
+    <string name="warn_bootsetting_title">警告！（非专业人员勿动）</string>
+    <string name="warn_bootsetting_content">修改高级参数配置将会影响测量的准确性，请专业人员配置！</string>
+    <string name="nomydoctip">您还没有匹配医生，请先匹配。</string>
+    <string name="nologin">用户未登陆</string>
+    <string name="doctorfeedback">医生指导建议</string>
+    <string name="isTesting">测量中</string>
+
+    <string-array name="autopress">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>150</item>
+        <item>180</item>
+        <item>240</item>
+    </string-array>
+
+    <string name="normal_xinlv">心率[60-100]</string>
+    <string name="normal_huxi">呼吸[12-20]</string>
+    <string name="normal_mailv">脉率[60-100]</string>iconicon
+    <string name="normal_shousuoya">收缩压[90-140]</string>
+    <string name="normal_suzhangya">舒张压[60-90]</string>
+    <string name="normal_tiwen">体温[36-37]</string>
+    <string name="normal_xueyang">血氧[>95]</string>
+
+
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="main_title">生活圈</string>
+    <string name="new_article_string">发布新文章</string>
+
+    <string name="jianqinbao">健亲宝</string>
+    <string name="mio">MIO手环</string>
+    <string name="input_by_hand">手动输入</string>
+
+
+    <!-- ICONFONT -->
+    <string name="ass_temperature">&#xe60b;</string>
+    <string name="ass_blood_pressure">&#xe60f;</string>
+    <string name="ass_heatrate">&#xe621;</string>
+    <string name="ass_sport">&#xe617;</string>
+    <string name="ass_ecg">&#xe629;</string>
+    <string name="ass_weight">&#xe603;</string>
+    <string name="ass_height_weight">&#xe6cb;</string>
+    <string name="ass_blood_oxygen">&#xe606;</string>
+    <string name="ass_sleep">&#xe622;</string>
+    <string name="ass_blood_sugar">&#xe601;</string>
+
+    <string name="rectangular">&#xe61c;</string>
+
+    <string name="icon_assess">&#xe6c1;</string>
+    <string name="icon_data">&#xe639;</string>
+    <string name="icon_forum">&#xe8a9;</string>
+    <string name="icon_user">&#xe641;</string>
+    <string name="icon_new_article">&#xe65f;</string>
+
+
+
+
+
+
+    <string name="error">Network error</string>
+    <string name="network_err">Simulation network error</string>
+    <string name="empty_network_error">Network error, Click Retry</string>
+    <string name="empty_no_data">There is no data, Click Retry</string>
+
+
+    <string name = "select_type">选择您的用户类型</string>
+
+    <!--类型选择的下拉框-->
+
+        <string name="type_spinner">Spinner</string>
+        <string-array name="types">
+            <item>普通（默认）</item>
+            <item>老人</item>
+            <item>妇女</item>
+            <item>小孩</item>
+        </string-array>
+
+</resources>

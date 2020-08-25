@@ -1,0 +1,60 @@
+<resources>
+    <!-- 1dp单元 -->
+    <dimen name="app_unit_dp">1dp</dimen>
+    <!-- 标题栏高度 -->
+    <dimen name="app_title_height">20dp</dimen>
+    <!-- 标题区域兼左右边距 -->
+    <dimen name="app_title_padding_lr">10dp</dimen>
+    <!-- 标题栏标题字体大小 -->
+    <dimen name="app_title_size">18sp</dimen>
+    <!-- 标题栏左右子功能字体大小 -->
+    <dimen name="app_title_sizelr">14sp</dimen>
+    <!-- 内容区域兼左右边距 -->
+    <dimen name="app_padding_lr">10dp</dimen>
+    <!-- 分割线横线 -->
+    <dimen name="app_divider_line_height_vertical">1dp</dimen>
+    <!-- 分割线纵向 -->
+    <dimen name="app_divider_line_height_horizontal">1dp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+
+
+    <dimen name="listview_padding_content_lr">10dp</dimen>
+    <dimen name="listview_padding_content_ud">10dp</dimen>
+    <dimen name="card_view_margin">10dp</dimen>
+
+
+    <!-- default: 960x540-360 -->
+    <dimen name="circle_size">160dp</dimen>
+    <dimen name="circle_width">18dp</dimen>
+    <dimen name="tab3_image_height">200dp</dimen>
+    <dimen name="margin_gap">10dp</dimen>
+    <dimen name="tab1textgap">10dp</dimen>
+    <dimen name="largefont">24sp</dimen>
+    <dimen name="defaultfont">18sp</dimen>
+    <dimen name="mediumfont">16sp</dimen>
+    <dimen name="smallfont">14sp</dimen>
+    <dimen name="listgap">0dp</dimen>
+    <dimen name="iconsize">20dp</dimen>
+    <dimen name="realtimedataheight">200dp</dimen>
+
+    <!--输入框大小 -->
+    <dimen name="editText">48dp</dimen>
+    <!-- 标题栏-->
+    <dimen name="title_height">50dp</dimen>
+    <dimen name="title_textsize_center">19sp</dimen>
+    <dimen name="title_textsize_left">16sp</dimen>
+    <!-- 主页测试圆的绘制大小 -->
+    <dimen name="test_init_circle_size">100dp</dimen>
+    <dimen name="test_max_circle_size">200dp</dimen>
+
+    <!-- 侧滑菜单 -->
+    <dimen name="shadow_width">10dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+
+    <dimen name="test_history_menu">60dp</dimen>
+    <dimen name="main_other_drawpadding">30dp</dimen>
+</resources>

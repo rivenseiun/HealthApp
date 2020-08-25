@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ngl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/forum_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/forum_item_useravatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bbs_head_icon" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/forum_item_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:textColor="@color/steelblue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/forum_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="time"
+                android:textColor="#70000000"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/forum_item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:textColor="@color/black"
+                android:text="content" />
+
+
+            <!-- 图片九宫格 -->
+            <com.jaeger.ninegridimageview.NineGridImageView
+                android:id="@+id/forum_item_nglimages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                ngl:imgGap="3dp"
+                ngl:showStyle="fill"
+                ngl:singleImgSize="160dp" />
+
+
+            <TextView
+                android:id="@+id/forum_item_articleid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#70000000"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#10000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/main_item_articleid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#70000000"
+                    android:text="articleid"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/forum_item_favor_btn"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/bbs_like_btn" />
+                <TextView
+                    android:id="@+id/forum_item_favor_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/forum_item_favor_btn"
+                    android:listSelector="#00000000"
+                    android:text="3"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/forum_item_comment_btn"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/forum_item_favor_count"
+                    android:background="@drawable/bbs_comment_btn" />
+                <TextView
+                    android:id="@+id/forum_item_comment_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/forum_item_comment_btn"
+                    android:layout_marginLeft="5dp"
+                    android:listSelector="#00000000"
+                    android:text="3"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+
+            <!-- 评论列表 -->
+            <com.whu.healthapp.view.CommentListView
+                android:id="@+id/forum_item_lv_comments"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

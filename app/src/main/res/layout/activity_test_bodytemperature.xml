@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+    
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:background="@color/theme_green" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="体温测量"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_textsize_left"
+            android:clickable="true"
+            android:onClick="viewClick"
+            />
+
+    </RelativeLayout>
+
+    <com.whu.healthapp.view.Thermometer
+        android:id="@+id/the_measure"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/rl_title"/>
+
+
+    <LinearLayout
+        android:layout_below="@+id/the_measure"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="您的测量结果"
+            android:textSize="22sp"
+            />
+        <TextView
+            android:id="@+id/tv_tiwennum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/theme_green"
+            android:text=""
+            android:textSize="25sp"
+            />
+        <TextView
+            android:id="@+id/tv_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/theme_green"
+            android:textSize="35sp"
+            android:text="优秀"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_testreport_operate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_pause"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_testreport_operate"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="暂停"
+            android:textColor="@color/theme_green"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:onClick="viewClick"/>
+
+        <TextView
+            android:id="@+id/tv_stop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_testreport_operate"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="停止"
+            android:textColor="@color/theme_green"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:onClick="viewClick"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
